@@ -15,7 +15,6 @@
    animation-duration: 4s;
    animation-timing-function: ease-out;
 
-
 }
 @keyframes myslide 
 {
@@ -40,6 +39,7 @@
    position:relative;
    right: 96px;
    bottom: 40px;
+   /*transform: skewX(30deg);*/
   }
   .navbar ul li 
   {
@@ -56,6 +56,11 @@
    
    color: rgb(239, 239, 239);
    text-transform: uppercase;
+  }
+  .navbar ul li a:hover
+  {
+    
+    font-size: 115%;
   }
   
   .navbar ul li::after
@@ -94,9 +99,9 @@ position: relative;
 .hero-subtitle {
    width: 23ch;
    letter-spacing: normal;
-   animation: typing 5s steps(23), blink .5s step-end infinite alternate;
-   animation-iteration-count: infinite;
+   animation: typing 6s steps(23), blink .5s step-end infinite alternate;
    animation-delay: 0s;
+   animation-iteration-count: infinite;
    white-space: nowrap;
    overflow: hidden;
    border-right: 3px solid;

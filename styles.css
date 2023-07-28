@@ -12,7 +12,9 @@
    background-size: cover;
    background-position: center;
    animation: myslide;
-   animation-duration: 5s;
+   animation-duration: 4s;
+   animation-timing-function: linear;
+
 
 }
 @keyframes myslide 

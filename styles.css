@@ -65,17 +65,41 @@
   }
 .content
 {
-   width: 100%;
-   position:absolute;
-   top: 50%;
-   transform: translateY(-50%);
-   text-align:center ;
-   color:whitesmoke ;
-
+   height: 100vh;
+   /*This part is important for centering*/
+   display: grid;
+   place-items: center;
+   color: whitesmoke;
+position: relative;
 }
 .textuppercase
 {
    text-transform: uppercase;
    position: relative;
-   top: 10px;
+   top: -160px;
 }
+.hero-subtitle {
+   width: 22ch;
+   letter-spacing: normal;
+   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+   white-space: nowrap;
+   overflow: hidden;
+   border-right: 3px solid;
+   font-family: monospace;
+   font-size: 3em;
+   text-align:center ;
+   position: relative;
+   bottom: 300px;
+ }
+ 
+ @keyframes typing {
+   from {
+     width: 0
+   }
+ }
+     
+ @keyframes blink {
+   50% {
+     border-color: transparent
+   }
+ }

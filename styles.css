@@ -13,7 +13,7 @@
    background-position: center;
    animation: myslide;
    animation-duration: 4s;
-   animation-timing-function: linear;
+   animation-timing-function: ease-out;
 
 
 }
@@ -96,6 +96,7 @@ position: relative;
    letter-spacing: normal;
    animation: typing 5s steps(23), blink .5s step-end infinite alternate;
    animation-iteration-count: infinite;
+   animation-delay: 0s;
    white-space: nowrap;
    overflow: hidden;
    border-right: 3px solid;

@@ -90,9 +90,9 @@ position: relative;
    top: -160px;
 }
 .hero-subtitle {
-   width: 22ch;
+   width: 23ch;
    letter-spacing: normal;
-   animation: typing 4s steps(22), blink .5s step-end infinite alternate;
+   animation: typing 5s steps(23), blink .5s step-end infinite alternate;
    animation-iteration-count: infinite;
    white-space: nowrap;
    overflow: hidden;

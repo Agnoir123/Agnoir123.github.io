@@ -99,7 +99,7 @@ position: relative;
 .hero-subtitle {
    width: 23ch;
    letter-spacing: normal;
-   animation: typing 6s steps(23), blink .5s step-end infinite alternate;
+   animation: typing 3s steps(23), blink .5s step-end infinite alternate;
    animation-delay: 0s;
    animation-iteration-count: infinite;
    white-space: nowrap;

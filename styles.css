@@ -26,33 +26,36 @@
 {
    width: 85%;
    margin: auto;
-   padding:35px 0;
+   padding:5.882352941176471vh 0;
    display: flex;
    align-items:center ;
    justify-content: space-between;
+   position: relative;
+   
   }
   .logo
   {
-   width: 200px;
-   height: 120px;
+   width: 15.625vw;
+   height: 20.168067226890756vh;
    cursor: pointer;
    position:relative;
-   right: 96px;
-   bottom: 40px;
+   right: 7.5vw;
+   bottom: 6.722689075630252vh;
    /*transform: skewX(30deg);*/
   }
   .navbar ul li 
   {
    list-style:none ;
    display: inline-block;
-   margin: 0 20px;
+   margin: 0 1.5625vw;
    position: relative;
-   bottom: 60px;
-   left: 70px;
+   bottom: 10.084033613445378vh;
+   left: 5.46875vw;
   }
   .navbar ul li a
   {
    text-decoration: none;
+   font-size: 100%;
    
    color: rgb(239, 239, 239);
    text-transform: uppercase;
@@ -66,12 +69,12 @@
   .navbar ul li::after
   {
    content:'' ;
-   height: 3px;
+   height:  0.5042016806722689vh;
    width: 0%;
    background:rgb(64, 26, 44) ;
    position: absolute;
    left:0 ;
-   top: 20px;
+   top: 3.361344537815126vh;
    transition: 0.5s;
 
   }
@@ -93,8 +96,16 @@ position: relative;
 .textuppercase
 {
    text-transform: uppercase;
+   font-family:  sans-serif;
+   font-size: 200%;
    position: relative;
-   top: -160px;
+   top: -26.89075630252101vh;
+}
+.text
+{
+  font-size: 84%;
+  position: relative;
+  font-family: sans-serif;
 }
 .hero-subtitle {
    width: 23ch;
@@ -104,12 +115,12 @@ position: relative;
    animation-iteration-count: infinite;
    white-space: nowrap;
    overflow: hidden;
-   border-right: 3px solid;
+   border-right: 0.234375vw solid;
    font-family: monospace;
-   font-size: 3em;
+   font-size: 300%;
    text-align:center ;
    position: relative;
-   bottom: 300px;
+   bottom: 50.42016806722689vh;
  }
  
  @keyframes typing {

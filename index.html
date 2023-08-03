@@ -1,247 +1,184 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
-body
-{
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
-    overflow-x: hidden;
-}
-#header
-{
-    width: 100%;
-    height: 135vh;
-    background-image: linear-gradient(rgba(90, 84, 84, 0.75),rgba(90, 84, 84, 0.75)),url(back.jpg);
-    background-size: cover;
-   background-position:top center ;
-    animation: myslide;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-   
-   
-   
-   
-}
-@keyframes myslide 
-{
-  from{width: 0%;}
-  to{width: 100%;}
-}
-.container
-{
-    padding: -5px 10vh;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8"/>   
+ <link rel="stylesheet" href="styles.css"/>
+ 
+ 
+ <title>My website</title>
 
-.logo
-{
-    width: 200px;
-    height: 200px;
-    position: relative;
-    top: -50px;
-    cursor: pointer;
-
-}
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-}
-nav ul li a{
-    color:rgb(255, 255, 255) ;
-    text-decoration: none;
-   
-    position: relative;
-    top: -45px;
-    right: 20px;
-    
-    font-size: 100%;
-    
-   
-    text-transform: uppercase;
-
-}
-nav ul li a::after
-{
-    content:'' ;
-   height:  3px;
-   width: 0%;
-   background:blueviolet ;
-   position: absolute;
-   left:0 ;
-   top: 3.361344537815126vh;
-   transition: 0.5s;
-}
-   nav ul li a:hover::after
-  {
-   width: 100%;
-
-  }
-  nav ul li a:hover
-  {
-    
-    font-size: 115%;
-    color: blueviolet;
-  }
-  .header-text 
-  {
-    font-size: large;
-    margin: 40%;
-   font-size: auto;
-   
-   top: -400px;
-   position: relative;
-    
-  }
-  .header-text h1
-  {
-    
-    font-size: 30px;
-    
-    position: absolute;
-    top:30px;
-    margin-top: auto;
-    display: inline-block;
-
-  }
-  .header-text h1 span
-  {
-    color: red;
-    font-size: 105%;
-  }
-#about
-{
-    padding: 80px 0;
-    color: rgb(121, 114, 114);
-    position: absolute;
-    top: 900px;
-    
-}
-.about-col-1 img
-{
-   height: 500px;
-   width: 400px;
-   border-radius: 15px;
-  
-}
-
-.row
+ 
+</head>  
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo (1).png" class="logo">
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <style id="stylewrapper">
+                nav
 {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-}
-.about-col-1
-{
-    flex-basis: 35%;
-}
-.about-col-2
-{
-flex-basis: 90%;
-}
-.subtitle
-{
-    position: relative;
-    left: 100px;
-    bottom: 20px;
-    font-size: 40px;
-    font-weight: 600;
-}
-.para
-{
-    font-size: small;
-    position: relative;
-    left:10px;
-}
-.tab-links
-{
+    flex-wrap: wrap;
+    height :16vh;
+    position: sticky;
+    top : 0px;
     
-    margin-inline-start: 60px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-   
-}  
-.tab-titles
+    
+}
+            </style>
+            <div class="header-text"><p>I'm a <span id ="auto-type"></span></p>
+                <br>
+                <h1>Hi, I am <span>Nagesh Kantharajapura Somashekara</span> from UK</h1>
+                <span class="imaee">
+                    <p class="imae"><a href="https://youtube.com/@CloudTech007"><img  class ="gmail" src="inpixio-removebg-image (1).png" ></a></p>
+                    <p class="imae"><a href="https://github.com/NAGESHGOWDA1993"><img  class ="github" src="25231.png" ></a></p>
+                </span>
+                    
+               
+                
+            </div>
+                <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                <script>
+                    var typed = new Typed("#auto-type",
+                    {
+                        strings:["DevOps Engineer","Software Engineer","Chess Player"],
+                        typeSpeed:150,
+                        backSpeed:150,
+                        loop:true
+
+                    })
+                </script>
+               
+            
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                     <img src="WhatsApp Image 2023-07-28 at 01.05.02.jpg" >
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p class="para">
+                            Nagesha KS is an accomplished DevOps Engineer with over 5 years of experience in cloud computing, continuous integration and continuous delivery (CI/CD). He has expertise in designing, implementing, and maintaining complex cloud infrastructures on platforms like AWS and Azure, and he is skilled in automation of cloud infrastructure and deployment processes. Nagesha also has extensive knowledge of version control systems like Git, containerization using Docker, orchestration using Kubernetes, and configuration management using Ansible. He is well-versed in Infrastructure as Code (IaC) using Terraform and has experience working with various operating systems such as RedHat, Linux, Ubuntu, and Windows.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                            <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>AWS/Kubernetes</span><br>Pipelines for code deployment</li>
+                                <li><span>Docker/Jenkins</span><br>Usage of Groovy scripts</li>
+                                <li><span>Node/React</span><br>Web-app development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2016</span><br>Bachelor of Engineering from Visvesvaraya Technological University</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2016</span><br>Bachelor of Engineering from Visvesvaraya Technological University</li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <script>
+        document.addEventListener('scroll', function()
+        {
+            let op =
+
+            `
+            nav
 {
     display: flex;
-    margin: 20px 0 40px;
-}
-#auto-type
-{
-    color: blue;
-    font-size: medium;
-}
-.tab-links::after{
-    content: '';
-    position: absolute;
-    background-color: aquamarine;
-    width: 0;
-    height: 8px;
-    bottom: -8px;
-    left: 0;
-    transition: 0.5s;
-}
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height :18vh;
+    position: sticky;
+    top : 0px;
+    background-color: black;
 
-.gmail
-{
-    height: 50px;
-    width: 60px;
-    cursor: pointer;
-    position: relative;
-    top: 2px;
-   
-  
-}
-.github
-{
-    height: 45px;
-    width: 40px;
-    cursor: pointer;
+    
     
 }
-.imaee
-{
-    position: absolute;
-    top: 180px;
-    right: 90px;
 
-    display: flex;
-    margin: 20px 0 40px;
+            `
+            let od =
+
+`
+nav
+{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+height :16vh;
+position: sticky;
+top : 0px;
+/*background-color: black;*/
+z-index:1;
+
+
 }
-.imae{
-    margin-inline-start: 60px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
+
+`
+let ot =
+
+`
+nav
+{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+height :18vh;
+position: sticky;
+top : 0px;
+/*background-color: black;*/
+
+
+}
+
+`
+
+
+           
+           if(window.scrollY>0){
+           
+            document.getElementById('stylewrapper').innerText=op
+            
+           
+           }
+           else 
+           {
+            document.getElementById('stylewrapper').innerText=od
+           }
+             
+        })
+    </script>
     
-   
-
-}
-.tab-links.active-link::after
-{
-    width: 50%;
-}
-.tab-contents ul li
-{
-    list-style: none;
-    margin: 10px 0;
-
-}
-.tab-contents ul li span{
-    font-size: 12px;
-    color: rgb(0, 26, 255);
-}
-.tab-contents
-{
-    position: relative;
-    right: -20px;
-    display: none;
-}
-.tab-contents.active-tab
-{
-display: block;
-}
+</body>

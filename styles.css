@@ -165,12 +165,19 @@ flex-basis: 90%;
 }
 .tab-links
 {
-    margin-right: 60px;
+    
+    margin-inline-start: 60px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
+   
 }  
+.tab-titles
+{
+    display: flex;
+    margin: 20px 0 40px;
+}
 #auto-type
 {
     color: blue;

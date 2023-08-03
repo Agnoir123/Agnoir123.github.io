@@ -3,35 +3,65 @@
 <head>
  <meta charset="UTF-8"/>   
  <link rel="stylesheet" href="styles.css"/>
+ 
+ 
  <title>My website</title>
-</head>    
-
-
+ <link rel="stylesheet" href="styles.css">
+ 
+</head>  
 <body>
-    
-
-    <div id="banner">
-        <div class="navbar">
-            <img src="logo.jpg" class="logo">
-            <ul>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo (1).png" class="logo">
+                <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Experience</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
-            </ul>
+                </ul>
+            </nav>
+            <div class="header-text"><p>I'm a <span id ="auto-type"></span></p>
+                <br>
+                <h1>Hi, I am <span>Nagesh Kantharajapura Somashekara</span> from UK</h1></div>
+                <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                <script>
+                    var typed = new Typed("#auto-type",
+                    {
+                        strings:["DevOps Engineer","Software Engineer","Chess Player"],
+                        typeSpeed:150,
+                        backSpeed:150,
+                        loop:true
+
+                    })
+                </script>
+               
+            
         </div>
-        <div class="content">
-            <h5 class="text">Hi, I am </h5>
-            <h1 class="textuppercase">Nagesh Gowda </h1>
-            <p class="hero-subtitle">
-                I am a DevOps Engineer
-                </p>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                     <img src="WhatsApp Image 2023-07-28 at 01.05.02.jpg" >
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p class="para">
+                            Nagesha KS is an accomplished DevOps Engineer with over 5 years of experience in cloud computing, continuous integration and continuous delivery (CI/CD). He has expertise in designing, implementing, and maintaining complex cloud infrastructures on platforms like AWS and Azure, and he is skilled in automation of cloud infrastructure and deployment processes. Nagesha also has extensive knowledge of version control systems like Git, containerization using Docker, orchestration using Kubernetes, and configuration management using Ansible. He is well-versed in Infrastructure as Code (IaC) using Terraform and has experience working with various operating systems such as RedHat, Linux, Ubuntu, and Windows.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links">Skills</p>
+                            <p class="tab-links">Education</p>
+                            <p class="tab-links">Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        
 
     </div>
-
-
+    
 </body>
-</html>

@@ -23,6 +23,21 @@
                 <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <style id="stylewrapper">
+                nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height :16vh;
+    position: sticky;
+    top : 0px;
+    /*background-color: black;*/
+    
+    
+}
+            </style>
             <div class="header-text"><p>I'm a <span id ="auto-type"></span></p>
                 <br>
                 <h1>Hi, I am <span>Nagesh Kantharajapura Somashekara</span> from UK</h1>
@@ -60,10 +75,30 @@
                             Nagesha KS is an accomplished DevOps Engineer with over 5 years of experience in cloud computing, continuous integration and continuous delivery (CI/CD). He has expertise in designing, implementing, and maintaining complex cloud infrastructures on platforms like AWS and Azure, and he is skilled in automation of cloud infrastructure and deployment processes. Nagesha also has extensive knowledge of version control systems like Git, containerization using Docker, orchestration using Kubernetes, and configuration management using Ansible. He is well-versed in Infrastructure as Code (IaC) using Terraform and has experience working with various operating systems such as RedHat, Linux, Ubuntu, and Windows.
                         </p>
                         <div class="tab-titles">
-                            <p class="tab-links">Skills</p>
-                            <p class="tab-links">Education</p>
-                            <p class="tab-links">Experience</p>
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                            <p class="tab-links"onclick="opentab('experience')">Experience</p>
                         </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>AWS/Kubernetes</span><br>Pipelines for code deployment</li>
+                                <li><span>Docker/Jenkins</span><br>Usage of Groovy scripts</li>
+                                <li><span>Node/React</span><br>Web-app development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2016</span><br>Bachelor of Engineering from Visvesvaraya Technological University</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2016</span><br>Bachelor of Engineering from Visvesvaraya Technological University</li>
+                                
+                            </ul>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -71,5 +106,59 @@
         
 
     </div>
+    <script>
+        document.addEventListener('scroll', function()
+        {
+            let op =
+
+            `
+            nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height :17vh;
+    position: sticky;
+    top : 0px;
+    background-color: black;
+    
+    
+}
+
+            `
+            let od =
+
+`
+nav
+{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+height :16vh;
+position: sticky;
+top : 0px;
+/*background-color: black;*/
+
+
+}
+
+`
+
+           
+           if(window.scrollY>0){
+
+            document.getElementById('stylewrapper').innerText=op
+            
+           
+           }
+           else 
+           {
+            document.getElementById('stylewrapper').innerText=od
+           }
+             
+        })
+    </script>
     
 </body>

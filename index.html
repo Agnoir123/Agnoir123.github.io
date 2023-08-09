@@ -130,8 +130,8 @@
                 const scriptURL = 'https://script.google.com/macros/s/AKfycbw8_EqhK85MfLi1D09PwlrQ9okkblkvMiRsPnVUtNIgoIkGG1bsZ1wHKsuM5K0I5vLC/exec'
     const form = document.forms['submit-to-google-sheet']
     
-    form.addEventListener('submit', e => {
-    e.preventDefault()
+    form.addEventListener('submit', Agnoirc4900j => {
+    Agnoirc4900j.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => console.log('Success!', response))
      .then( function(){document.getElementById('emai').innerHTML="Sent!"})

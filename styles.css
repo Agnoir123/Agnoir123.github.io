@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+html
+{
+    scroll-behavior: smooth;
+}
 body
 {
     background-color: rgb(0, 0, 0);
@@ -125,7 +129,7 @@ nav ul li a::after
 {
    height: 500px;
    width: 400px;
-   border-radius: 15px;
+   border-radius: 40px;
   
 }
 
@@ -174,7 +178,7 @@ flex-basis: 90%;
 #auto-type
 {
     color: blue;
-    font-size: large;
+    font-size: x-large;
 }
 .tab-links::after{
     content: '';
@@ -197,11 +201,28 @@ flex-basis: 90%;
    
   
 }
+.gmail:hover
+{
+    height: 60px;
+    width: 70px;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+}
+  
 .github
 {
     height: 45px;
     width: 40px;
     cursor: pointer;
+    
+}
+.github:hover
+{
+    height: 55px;
+    width: 50px;
+    cursor: pointer;
+    
     
 }
 .linkedin
@@ -213,11 +234,38 @@ flex-basis: 90%;
     right: 30px;
     bottom: 15px;
 }
+.linkedin:hover
+{
+    height: 90px;
+    width: 130px;
+    cursor: pointer;
+    position: relative;
+    right: 30px;
+    bottom: 15px;
+}
+.medium
+{
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    position: relative;
+    right: 80px;
+    bottom: 5px;
+}
+.medium:hover
+{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    position: relative;
+    right: 80px;
+    bottom: 5px;
+}
 .imaee
 {
     position: absolute;
     top: 180px;
-    right: -70px;
+    right: -140px;
 
     display: flex;
     margin: 20px 0 40px;
@@ -258,4 +306,44 @@ display: block;
 {
     display: block;
 }
+.form-container{
+    position: relative;
+    top: 600px;
+    align-items: center;
+    left: 50%;
+    
+}
+.empty{
+    position: relative ;
+    height: 100%;
+}
+form{
+    background: #fff;
+    display: flex;
+    width: fit-content;
+    position: relative;
+    top: -100px;
+    right: 200px;
+ 
+}
+form input
+{
+    border: 0;
+    outline: none;
+    padding: 10px 20px;
+    height: 70px;
+    width: 400px;
+    font-size: 16px;
+   
+}
+form button
+{
+    background: #61b752;
+    border :none;
+outline: none;
+height:70px ;
+width: 100px;
+cursor: pointer;
 
+
+}

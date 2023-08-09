@@ -52,6 +52,7 @@
                     <p class="imae"><a href="https://youtube.com/@CloudTech007"><img  class ="gmail" src="inpixio-removebg-image (1).png" ></a></p>
                     <p class="imae"><a href="https://github.com/NAGESHGOWDA1993"><img  class ="github" src="25231.png" ></a></p>
                     <p class="imae"><a href="https://www.linkedin.com/in/nageshaks"><img  class ="linkedin" src="linked.png" ></a></p>
+                    <p class="imae"><a href="https://www.linkedin.com/in/nageshaks"><img  class ="medium" src="medium.png" ></a></p>
                 </span>
                
                     
@@ -109,17 +110,36 @@
                                     </span><br>on network-related activities, such as establishing peering connections between VPCs and adding NACL rules to subnets.</li>
                                 
                             </ul>
+                            
                         </div>
+                       
                         
                     </div>
                 </div>
             </div>
         </div>
-        
-
-        
-
-    </div>
+        <div class="form-container">
+            <form  name="submit-to-google-sheet">
+                <input name="email" type="email" placeholder="Email" required>
+                
+                <button type="submit"><img src="send-icon.png" width="30px" ></button>
+              </form>
+              
+              <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbw8_EqhK85MfLi1D09PwlrQ9okkblkvMiRsPnVUtNIgoIkGG1bsZ1wHKsuM5K0I5vLC/exec'
+    const form = document.forms['submit-to-google-sheet']
+    
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => console.log('Success!', response))
+    .catch(error => console.error('Error!', error.message))
+    })
+              </script>
+              
+            </div>
+            
+            
     <script>
         document.addEventListener('scroll', function()
         {

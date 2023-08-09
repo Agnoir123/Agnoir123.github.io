@@ -124,6 +124,7 @@
                 
                 <button type="submit"><img src="send-icon.png" width="30px" ></button>
               </form>
+         <label  id="emai" for="email">Fill in ur details</label>
               
               <script>
                 const scriptURL = 'https://script.google.com/macros/s/AKfycbw8_EqhK85MfLi1D09PwlrQ9okkblkvMiRsPnVUtNIgoIkGG1bsZ1wHKsuM5K0I5vLC/exec'
@@ -133,6 +134,7 @@
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => console.log('Success!', response))
+     .then( function(){document.getElementById('emai').innerHTML="Sent!"})
     .catch(error => console.error('Error!', error.message))
     })
               </script>

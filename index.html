@@ -135,6 +135,7 @@
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => console.log('Success!', response))
      .then( function(){document.getElementById('emai').innerHTML="Sent!"})
+     .then(setTimeout(function(){document.getElementById('emai').innerHTML="Fill in ur details"},5000))
     .catch(error => console.error('Error!', error.message))
     })
               </script>

@@ -100,7 +100,7 @@ nav ul li a::after
     margin: 40%;
    font-size: auto;
    
-   top: -400px;
+   top: -67.22689075630252vh;
    position: relative;
    
     
@@ -344,7 +344,7 @@ display: block;
 }
 #form-container{
     position: relative;
-    top: 600px;
+    top: 100.84033613445378vh;
     align-items: center;
     left: 0%;
     

@@ -122,7 +122,7 @@ nav ul li a::after
 #about
 {
     padding: 80px 0;
-    color: rgb(121, 114, 114);
+    color: rgb(150, 233, 233);;
     position: absolute;
     top: 900px;
     
@@ -158,8 +158,11 @@ flex-basis: 90%;
 }
 .para
 {
-    font-size: small;
+     font-size:medium;
+    font-weight: 400;
+    font-family: Helvetica;
     position: relative;
+    color: #fff;
     left:10px;
 }
 .tab-links

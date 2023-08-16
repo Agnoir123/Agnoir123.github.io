@@ -40,6 +40,8 @@ body
 .container
 {
     padding: -5px 10vh;
+     position: relative;
+    bottom: 60px;
 }
 
 .logo
@@ -124,7 +126,7 @@ nav ul li a::after
     padding: 80px 0;
     color: rgb(150, 233, 233);;
     position: absolute;
-    top: 900px;
+    top: 151.26050420168067vh;
     
 }
 .about-col-1 img

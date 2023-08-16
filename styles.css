@@ -157,8 +157,19 @@ flex-basis: 90%;
     font-weight: 600;
 }
 .para
-{
-     font-size:medium;
+{  
+    font-size:medium;
+    font-weight: 400;
+    font-family: Helvetica;
+    position: relative;
+    color: #ffffffbc;
+    left:10px;
+    transition: 2s;
+
+}
+.para:hover
+{  
+    font-size:medium;
     font-weight: 400;
     font-family: Helvetica;
     position: relative;

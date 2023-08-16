@@ -124,6 +124,9 @@ nav ul li a::after
    height: 500px;
    width: 400px;
    border-radius: 40px;
+   position: relative; 
+    bottom: 10px;
+
   
 }
 
@@ -235,17 +238,17 @@ flex-basis: 90%;
 }
 .linkedin
 {
-    height: 80px;
-    width: 120px;
+    height: 90px;
+    width: 130px;
     cursor: pointer;
     position: relative;
-    right: 30px;
+    right: 40px;
     bottom: 15px;
 }
 .linkedin:hover
 {
-    height: 90px;
-    width: 130px;
+    height: 100px;
+    width: 140px;
     cursor: pointer;
     position: relative;
     right: 30px;

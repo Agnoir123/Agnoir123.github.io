@@ -125,7 +125,7 @@ nav ul li a::after
    width: 400px;
    border-radius: 40px;
    position: relative; 
-    bottom: 50px;
+    bottom: 20px;
 
   
 }

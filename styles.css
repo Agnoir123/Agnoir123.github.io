@@ -263,11 +263,29 @@ flex-basis: 90%;
     right: 80px;
     bottom: 5px;
 }
+.whatsapp
+{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    position: relative;
+    right: 90px;
+    bottom: 2px;
+}
+.whatsapp:hover
+{
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    position: relative;
+    right: 90px;
+    bottom: 10px;
+}
 .imaee
 {
     position: absolute;
     top: 180px;
-    right: -140px;
+    right: -230px;
 
     display: flex;
     margin: 20px 0 40px;

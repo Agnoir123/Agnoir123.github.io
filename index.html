@@ -187,7 +187,7 @@
     
     form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form),})
+    fetch('/api/proxy',{ method: 'POST', body: new FormData(form),})
     .then(response => console.log('Success!', response))
     .then( function(){document.getElementById('emai').innerHTML="Sent!"})
     .then(setTimeout(function(){document.getElementById('emai').innerHTML="Fill in ur details"},5000))

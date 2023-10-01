@@ -7,13 +7,7 @@ export default async function(req, res) {
   const formData = req.body;
 
   try {
-    const response = await fetch(url, {
-      method: 'POST',
-      body: JSON.stringify(formData),
-      headers: {
-        'Content-Type': 'application/json'
-      },
-    });
+    const response = await fetch(url, { method: 'POST', body: new FormData(formData),});
 
     const data = await response.json();
     res.status(response.status).json(data);
